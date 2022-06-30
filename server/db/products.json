@@ -1,0 +1,38 @@
+[
+  {
+    "id_product": 1,
+    "product_name": "Рюкзак",
+    "descripion": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "price": 200
+  },
+  {
+    "id_product": 2,
+    "product_name": "Костюм",
+    "descripion": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "price": 350
+  },
+  {
+    "id_product": 3,
+    "product_name": "Шорты",
+    "descripion": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "price": 150
+  },
+  {
+    "id_product": 4,
+    "product_name": "Брюки",
+    "descripion": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "price": 175
+  },
+  {
+    "id_product": 5,
+    "product_name": "Пиджак",
+    "descripion": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "price": 195
+  },
+  {
+    "id_product": 6,
+    "product_name": "Блузка",
+    "descripion": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "price": 135
+  }
+]

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f7fbbe7551.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/icomStyle.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <header class="backBlack">
+
+            <div class="cotaner top">
+                <filter-el></filter-el>
+                <cart ref="cart"></cart>
+            </div>
+
+        </header>
+        <article class="article_top">
+            <div class="cotaner">
+                <div class="common">
+                    <div class="common_left">
+                        <img src="img/topMen.png" alt="photo">
+                    </div>
+                    <div class="common_right">
+                        <div class="common_right_line"></div>
+                        <div class="common_right_text">
+                            <h3 class="common_right_text_h3">THE BRAND</h3>
+                            <p class="common_right_text_p">OF LUXERIOUS <span>FASHION</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- section img -->
+        <section class="cotaner section_content">
+            <div class="section_content_top">
+                <a href="#" class="section_item section_item__width section_item_left">
+                    <img class="section_item__img " src="img/for_women.png" alt="for_women">
+                    <div class="section_text">
+                        <p class="section_text_p">30% OFF</p>
+                        <h3 class="section_text_h3">FOR WOMEN</h3>
+                    </div>
+                </a>
+                <a href="#" class="section_item section_item__width section_item_centr">
+                    <img class="section_item__img" src="img/for_men.png" alt="for_men">
+                    <div class="section_text">
+                        <p class="section_text_p">HOT DEAL</p>
+                        <h3 class="section_text_h3">FOR MEN</h3>
+                    </div>
+                </a>
+                <a href="#" class="section_item section_item__width section_item_right">
+                    <img class="section_item__img" src="img/for_kid.png" alt="for_kid">
+                    <div class="section_text">
+                        <p class="section_text_p">NEW ARRIVALS</p>
+                        <h3 class="section_text_h3">FOR KIDS</h3>
+                    </div>
+                </a>
+            </div>
+            <a href="#" class="section_item section_item__down section_item_low">
+                <img class="section_item__img" src="img/ACCESORIES.png" alt="ACCESORIES">
+                <div class="section_text">
+                    <p class="section_text_p">LUXIROUS & TRENDY</p>
+                    <h3 class="section_text_h3">ACCESORIES</h3>
+                </div>
+            </a>
+        </section>
+        <!-- section card -->
+        <main id="productCart" class="cotaner section_content">
+            <h3 class="section_heading_h3">Fetured Items</h3>
+            <p class="section_heading_p">Shop for items based on what we featured in this week</p>
+
+            <error ref="error"></error>
+            <products ref="products"></products>
+
+            <a class="section_button" href="#">
+                <span class="section_button_span">Browse All Product</span>
+            </a>
+        </main>
+
+        <div class="footer_top backBlack">
+            <div class="cotaner section_content section_content_top">
+                <div class="footer_top_block">
+                    <img src="img/delivery.svg" alt="delivery">
+                    <h3 class="footer_top_block_h3">Free Delivery</h3>
+                    <p class="footer_top_block_p">Worldwide delivery on all. Authorit tively morph next-generation innov
+                        tion with extensive models.
+                    </p>
+                </div>
+                <div class="footer_top_block">
+                    <img src="img/discounts.svg" alt="discounts">
+                    <h3 class="footer_top_block_h3">Sales & discounts</h3>
+                    <p class="footer_top_block_p">Worldwide delivery on all. Authorit tively morph next-generation innov
+                        tion with extensive models.
+                    </p>
+                </div>
+                <div class="footer_top_block">
+                    <img src="img/assurance.svg" alt="assurance">
+                    <h3 class="footer_top_block_h3">Quality assurance</h3>
+                    <p class="footer_top_block_p">Worldwide delivery on all. Authorit tively morph next-generation innov
+                        tion with extensive models.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer_center">
+            <div class="cotaner section_content section_content_top ">
+                <div class="footer_center_left">
+                    <img src="img/footer_fase.png" alt="photo">
+                    <p class="footer_center_left_text">
+                        “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
+                        condimentum“
+                    </p>
+                </div>
+                <div class="footer_center_right">
+                    <h3 class="footer_center_right_h3">SUBSCRIBE</h3>
+                    <p class="footer_center_right_p">FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form action="#">
+                        <input class="footer_center_right_input" id="email" placeholder="Enter Your Email" required
+                            pattern="\S+@[a-z]+.[a-z]+">
+                        <button class="footer_center_right_button" for="email" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <footer class="backBlack">
+            <div class="cotaner section_content section_content_top footer_low">
+                <div class="footer_low_left">
+                    &copy 2021 Brand All Rights Reserved.
+                </div>
+                <div>
+                    <a class="footer_low_rigth fab fa-facebook-f" href="#"></a>
+                    <a class="footer_low_rigth fab fa-instagram" href="#"></a>
+                    <a class="footer_low_rigth fab fa-pinterest-p" href="#"></a>
+                    <a class="footer_low_rigth fab fa-twitter" href="#"></a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/searchFilter.js"></script>
+<script src="js/productCart.js"></script>
+<script src="js/CartComponent.js"></script>
+<script src="js/ErrorComp.js"></script>
+<script src="js/main.js"></script>
+
+
+</html>

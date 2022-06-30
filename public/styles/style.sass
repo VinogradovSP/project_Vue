@@ -1,0 +1,388 @@
+@import "variables"
+body
+    font-family: Lato
+
+.backBlack
+    background-color: black
+
+.top
+    min-height: 75px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &_span
+        position: absolute
+        background-color: $siteColor
+        border-radius: 50%
+        color: #fff
+        text-align: center
+        right: -15%
+        top: -15%
+        @include text-style(normal, 15px, 19px)
+        width: 19px
+        height: 19px
+    &_right
+        display: flex
+        min-width: 17%
+        justify-content: space-around
+        position: relative
+        &__in
+            padding: 3%
+            font-size: 25px
+            position: relative
+            &:hover .menu
+                display: block
+    &_left
+        display: flex
+
+.logo
+    text-decoration: none
+    margin-right: 30px
+.basket
+    position: relative
+    cursor: pointer
+    &_product
+        position: absolute
+        top: 115%
+        left: 31%
+        min-width: 150%
+        background: #fff
+        font-size: initial
+        &::before
+            content: ""
+            background-color: #fff
+            width: 12px
+            height: 12px
+            position: absolute
+            top: -6px
+            left: 95px
+            transform: rotate(45deg)
+    &-element
+        display: flex
+        align-items: center
+        text-align: center
+        margin: 3% 2%
+        background: #f8f5f5
+        justify-content: space-around
+    &-item
+        margin: 0 10px
+    &-btn
+        margin: 5px 0
+        border: transparent
+
+.button_top
+    border: transparent
+    background-color: transparent
+
+.search
+    border-bottom: 3px solid #fff
+    display: flex
+    align-items: center
+    width: 70%
+    &-field
+        background-color: transparent
+        border: transparent
+        font-size: 25px
+        padding-left: 10px
+        width: 100%
+        color: #fff
+        box-sizing: border-box
+        &:focus
+            outline: none
+
+.img
+    width: 25%
+
+.icon-search
+    color: #fff
+    font-size: 30px
+
+.icon-align-justify
+    color: #fff
+    position: relative
+
+.menu
+    display: none
+    position: absolute
+    background: #FFFFFF
+    top: 100%
+    right: 0%
+    min-height: 600px
+    max-width: 232px
+    padding: 45% 45% 0 90%
+    box-sizing: border-box
+    box-shadow: -5px 5px 30px 0px #b1b0b0
+    &_button
+        margin-left: 90%
+        border: transparent
+        background: #fff
+
+.menu_text
+    @include text-style(normal, 14px, 17px)
+    display: block
+    list-style-type: none
+    &_top
+        font-weight: bold
+        color: #000000
+        min-width: 232px
+        margin-bottom: 14%
+    &_red
+        color: $siteColor
+        margin-bottom: 12px
+    &_colorA
+        color: #6F6E6E
+        text-decoration: none
+        margin: 0 0 4% 13%
+        &:hover
+            color: $textColor
+            border-bottom: 1px solid $textColor
+        &:last-of-type
+            margin-bottom: 12%
+
+.article_top
+    background-color: #F1E4E6
+    margin-bottom: 6%
+
+.common
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &_left
+        max-width: 48%
+        img
+            width: 100%
+    &_right
+        display: flex
+        max-width: 48%
+        &_line
+            min-width: 3%
+            background-color: $siteColor
+            margin-right: 5%
+        &_text
+            max-width: 100%
+            &_h3
+                @include text-style(900, 48px, 58px)
+            &_p
+                @include text-style(300, 32px, 44px)
+                min-width: 120%
+                span
+                    color: $textColor
+
+.section_content
+    padding: 0 2% 0
+    text-align: center
+    &_top
+        display: flex
+        justify-content: space-evenly
+
+.section_item
+    display: grid
+    grid-template-columns: repeat(5, 20%)
+    grid-template-rows: repeat(4, 20%)
+    text-decoration: none
+    transition: all 0.8s
+
+    &_left:hover
+        transform: translateX(20%) scale(1.1)
+        box-shadow: 6px 6px 20px 1px #fad3d7
+        z-index: 1
+
+    &_centr:hover
+        transform: scale(1.1)
+        box-shadow: 0 6px 20px 1px #fad3d7
+
+    &_right:hover
+        transform: translateX(-20%) scale(1.1)
+        box-shadow: -6px 6px 20px 1px #fad3d7
+        z-index: 1
+
+    &_low:hover
+        transform: scale(1.1, 1.1)
+        box-shadow: 0 0 30px 3px #fad3d7
+        z-index: 1
+
+    &_left:hover .section_item__img, &_centr:hover .section_item__img, &_right:hover .section_item__img, &_low:hover .section_item__img
+        filter: brightness(100%)
+
+    &_right:hover .section_text, &_centr:hover .section_text, &_low:hover .section_text, &_left:hover .section_text
+        animation: myAnim 3s ease 0s infinite normal forwards
+
+    &__width
+        width: 32%
+    &__down
+        margin-top: 2%
+        margin-bottom: 9%
+    &__img
+        filter: brightness(30%)
+        width: 100%
+        grid-column: 1/6
+        grid-row: 1/6
+        z-index: -1
+
+.section_text
+    grid-column: 1/6
+    grid-row: 3/4
+    &_p
+        @include text-style(normal, 16px, 19px)
+        color: #ffffff
+
+    &_h3
+        @include text-style(normal, 25px, 30px)
+        color: $textColor
+
+.section_heading_h3
+    @include text-style(normal, 30px, 36px)
+
+.section_heading_p
+    @include text-style(normal, 14px, 17px)
+    color: #9F9F9F
+
+.section_center
+    display: flex
+    margin-top: 5%
+    margin-bottom: 5%
+    justify-content: space-between
+    flex-wrap: wrap
+
+.product_card
+    width: 32%
+    margin-bottom: 2%
+    background-color: #F8F8F8
+    position: relative
+    &_button
+        display: none
+        position: absolute
+        top: 30%
+        justify-content: center
+        width: 100%
+        &_add
+            width: 30%
+            border: 1px solid #FFFFFF
+            padding: 3% 4%
+            &:hover
+                box-shadow: 0px 0px 15px #fff
+        &_span
+            margin-left: 2%
+            @include text-style(normal, 14px, 17px)
+            color: #FFFFFF
+    &:hover &_img
+        filter: brightness(30%)
+    &:hover &_button
+        display: flex
+    &:hover
+        box-shadow: -5px 5px 10px 1px #c3bcbc
+
+    &_img
+        width: 100%
+    &_text
+        padding: 6% 3%
+        text-align: start
+        &_h3
+            margin-bottom: 5%
+            @include text-style(normal, 30px, 16px)
+            color: #222222
+        &_p
+            margin-bottom: 5%
+            @include text-style(300, 14px, 17px)
+            color: #5D5D5D
+        &_price
+            @include text-style(normal, 16px, 19px)
+            color: $siteColor
+
+@media screen and (min-width: 376px) and (max-width: 768px)
+    .product_card
+        width: 48%
+    .top
+        justify-content: space-evenly
+
+.section_button
+    text-decoration: none
+    border: 1px solid $siteColor
+    padding: 1.3% 3.3%
+    @include text-style(normal, 16px, 19px)
+    color: $textColor
+    transition: 0.8s
+    &:hover
+        background: $siteColor
+        color: #fff
+        box-shadow: -7px 10px 10px 1px #f0aaaa
+
+.footer_top
+    min-height: 341px
+    max-width: 1600px
+    margin: 9% auto 0
+    display: flex
+    align-items: center
+    &_block
+        width: 30%
+        min-height: 170px
+        &_h3
+            @include text-style(normal, 20px, 24px)
+            color: #FBFBFB
+            margin: 8% 0 4%
+        &_p
+            @include text-style(300, 14px, 17px)
+            color: #FBFBFB
+
+.footer_center
+    min-height: 448px
+    max-width: 1600px
+    background-image: url(../img/fon_footer.jpg)
+    background-size: cover
+    margin: 0 auto
+    align-items: center
+    display: flex
+    &_left
+        width: 48%
+        &_text
+            @include text-style(normal, 20px, 24px)
+            color: #222224
+            max-width: 66%
+            margin: 0 auto
+            margin-top: 5%
+
+    &_right
+        width: 48%
+        &_h3
+            @include text-style(bold, 24px, 40px)
+        &_p
+            @include text-style(400, 18px, 30px)
+            margin-bottom: 4%
+        &_input
+            border: transparent
+            background: #E1E1E1
+            border-radius: 20px 0 0 20px
+            padding-left: 20px
+            min-height: 49px
+            min-width: 256px
+        &_button
+            @include text-style(400, 14px, 17px)
+            color: #FFFFFF
+            background: $siteColor
+            border: transparent
+            min-height: 49px
+            min-width: 100px
+            border-radius: 0 20px 20px 0
+            margin-left: -5px
+            transition: 0.8s
+            &:hover
+                border: 1px solid $siteColor
+                background: #f4f4f4b3
+                color: $textColor
+
+.footer_low
+    min-height: 79px
+    align-items: center
+    &_left
+        @include text-style(normal, 16px, 19px)
+        color: #FBFBFB
+    &_rigth
+        @include text-style(400, 16px, 14px)
+        padding: 16px
+        margin-left: 8px
+        background-color: #ffffff
+        text-decoration: none
+        transition: 0.8s
+        &:hover
+            background-color: $siteColor
+            color: #fff
